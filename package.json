@@ -48,5 +48,6 @@
   },
   "resolutions": {
     "graphql": "0.13.x"
-  }
+  },
+  "files": ["/*.js"]
 }
