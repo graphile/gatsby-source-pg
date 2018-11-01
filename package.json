@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-pg",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "PostgreSQL source for Gatsby, powered by PostGraphile",
   "main": "index.js",
   "scripts": {
@@ -49,5 +49,7 @@
   "resolutions": {
     "graphql": "0.13.x"
   },
-  "files": ["/*.js"]
+  "files": [
+    "/*.js"
+  ]
 }
