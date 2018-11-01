@@ -1,0 +1,28 @@
+{
+  "name": "gatsby-source-pg",
+  "version": "1.0.0",
+  "description": "PostgreSQL source for Gatsby, powered by PostGraphile",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphile/gatsby-source-pg.git"
+  },
+  "keywords": [
+    "postgres",
+    "postgresql",
+    "pg",
+    "gatsby",
+    "postgraphile",
+    "graphile",
+    "source"
+  ],
+  "author": "Benjie Gillam <code@benjiegillam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/graphile/gatsby-source-pg/issues"
+  },
+  "homepage": "https://github.com/graphile/gatsby-source-pg#readme"
+}
