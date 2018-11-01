@@ -24,5 +24,19 @@
   "bugs": {
     "url": "https://github.com/graphile/gatsby-source-pg/issues"
   },
-  "homepage": "https://github.com/graphile/gatsby-source-pg#readme"
+  "homepage": "https://github.com/graphile/gatsby-source-pg#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-graphql": "benjie/eslint-plugin-graphql#ignore-fragments-built",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.26.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint_d": "^7.1.1",
+    "prettier": "^1.14.3"
+  }
 }
