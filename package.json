@@ -25,6 +25,13 @@
     "url": "https://github.com/graphile/gatsby-source-pg/issues"
   },
   "homepage": "https://github.com/graphile/gatsby-source-pg#readme",
+  "dependencies": {
+    "apollo-link": "^1.2.3",
+    "gatsby-source-graphql": "^2.0.5",
+    "graphql": "0.13.x",
+    "pg": "^7.6.0",
+    "postgraphile": "^4.1.0-rc.0"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
@@ -38,5 +45,8 @@
     "eslint-plugin-react": "^7.11.1",
     "eslint_d": "^7.1.1",
     "prettier": "^1.14.3"
+  },
+  "resolutions": {
+    "graphql": "0.13.x"
   }
 }
