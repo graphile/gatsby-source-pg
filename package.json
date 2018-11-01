@@ -49,7 +49,5 @@
   "resolutions": {
     "graphql": "0.13.x"
   },
-  "files": [
-    "/*.js"
-  ]
+  "files": ["/lib", "/index.js", "/gatsby-node.js"]
 }
