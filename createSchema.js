@@ -1,7 +1,7 @@
-const { createPostGraphileSchema } = require('postgraphile')
+const { createPostGraphileSchema } = require("postgraphile");
 
 function requireFrom(modules, moduleName) {
-  const path = [...modules, moduleName].join('/node_modules/')
+  const path = [...modules, moduleName].join("/node_modules/");
   try {
     return require(path); // eslint-disable-line
   } catch (e) {
@@ -10,46 +10,40 @@ function requireFrom(modules, moduleName) {
       const result = requireFrom(
         modules.slice(0, modules.length - 1),
         moduleName
-      )
-      if (result) return result
+      );
+      if (result) return result;
     }
     return (
       requireFrom(modules.slice(1), moduleName) ||
       requireFrom(modules.slice(0, modules.length - 1), moduleName)
-    )
+    );
   }
 }
 const graphileBuild = requireFrom(
-  ['postgraphile', 'postgraphile-core'],
-  'graphile-build'
-)
-/*
-const graphileBuildPg = requireFrom(
-  ['postgraphile', 'postgraphile-core'],
-  'postgraphile/node_modules/graphile-build-pg'
-)
-*/
+  ["postgraphile", "postgraphile-core"],
+  "graphile-build"
+);
 
-const RenamedQueryPlugin = require('./RenamedQueryPlugin')
+const RenamedQueryPlugin = require("./RenamedQueryPlugin");
 
 const skipPlugins = [
   graphileBuild.QueryPlugin,
   graphileBuild.MutationPlugin,
   graphileBuild.SubscriptionPlugin,
-]
-const prependPlugins = [RenamedQueryPlugin]
+];
+const prependPlugins = [RenamedQueryPlugin];
 
 module.exports = async (pool, schema, options) => {
-  const schemas = Array.isArray(schema) ? schema : schema.split(',')
+  const schemas = Array.isArray(schema) ? schema : schema.split(",");
   const graphqlSchema = await createPostGraphileSchema(pool, schemas, {
-    simpleCollections: 'both',
+    simpleCollections: "both",
     dynamicJson: true,
     showErrorStack: true,
-    extendedErrors: ['hint', 'detail', 'errcode'],
-    legacyRelations: 'omit',
+    extendedErrors: ["hint", "detail", "errcode"],
+    legacyRelations: "omit",
     ...options,
     skipPlugins: [...skipPlugins, ...(options.skipPlugins || [])],
     prependPlugins: [...prependPlugins, ...(options.prependPlugins || [])],
-  })
-  return graphqlSchema
-}
+  });
+  return graphqlSchema;
+};

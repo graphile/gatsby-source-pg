@@ -8,7 +8,7 @@ module.exports = async function performQuery(
   variables,
   operationName
 ) {
-  const queryString = typeof query === 'string' ? query : print(query);
+  const queryString = typeof query === "string" ? query : print(query);
   return withPostGraphileContext({ pgPool }, async context =>
     graphql(
       schema, // The schema from `createPostGraphileSchema`
