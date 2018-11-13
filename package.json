@@ -11,13 +11,20 @@
     "url": "git+https://github.com/graphile/gatsby-source-pg.git"
   },
   "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source-plugin",
+    "source",
+    "plugin",
+    "pg",
     "postgres",
     "postgresql",
-    "pg",
-    "gatsby",
+    "sql",
+    "psql",
+    "pgsql",
     "postgraphile",
     "graphile",
-    "source"
+    "postgraphql"
   ],
   "author": "Benjie Gillam <code@benjiegillam.com>",
   "license": "MIT",
