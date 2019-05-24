@@ -39,7 +39,7 @@
     "postgraphile": "^4.1.0-rc.0"
   },
   "peerDependencies": {
-    "graphql": "^0.13.x"
+    "graphql": "^0.13.x | ^14.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
