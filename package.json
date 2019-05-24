@@ -35,9 +35,11 @@
   "dependencies": {
     "apollo-link": "^1.2.3",
     "gatsby-source-graphql": "^2.0.5",
-    "graphql": "0.13.x",
     "pg": "^7.6.0",
     "postgraphile": "^4.1.0-rc.0"
+  },
+  "peerDependencies": {
+    "graphql": "^0.13.x"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
