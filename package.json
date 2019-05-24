@@ -55,9 +55,6 @@
     "eslint_d": "^7.1.1",
     "prettier": "^1.14.3"
   },
-  "resolutions": {
-    "graphql": "0.13.x"
-  },
   "files": [
     "/lib",
     "/index.js",
