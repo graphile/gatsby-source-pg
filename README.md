@@ -54,7 +54,7 @@ module.exports = {
     {
       resolve: "gatsby-source-pg",
       options: {
-        connectionString: "postgres://mydb",
+        connectionString: "postgres://user:pass@host/dbname",
         schema: "public",
         refetchInterval: 60, // Refetch data every 60 seconds
       },
