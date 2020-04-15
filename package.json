@@ -4,6 +4,9 @@
   "description": "PostgreSQL source for Gatsby, powered by PostGraphile",
   "main": "index.js",
   "scripts": {
+    "lint:fix": "yarn prettier --write && yarn eslint --fix",
+    "prettier": "prettier --ignore-path .eslintignore '**/*.{js,jsx,ts,tsx,graphql,md,yaml,yml}'",
+    "eslint": "eslint --ext js,jsx,ts,tsx .",
     "test": "jest"
   },
   "repository": {
@@ -43,12 +46,12 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-graphql": "benjie/eslint-plugin-graphql#ignore-fragments-built",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^21.26.2",
+    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",

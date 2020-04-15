@@ -1,22 +1,15 @@
 module.exports = {
   parser: "babel-eslint",
-  extends: ["airbnb", "prettier"],
-  plugins: ["jest", "prettier"],
+  extends: ["eslint:recommended", "prettier"],
+  plugins: ["jest"],
   env: {
     jest: true,
-    node: true
+    node: true,
+    es6: true,
   },
   rules: {
     // Autofix removes debugger automatically, which makes debugging annoying.
     "no-debugger": 0,
-
-    // Prettier
-    "prettier/prettier": [
-      "error",
-      {
-        trailingComma: "es5"
-      }
-    ],
 
     // Jest
     "jest/no-focused-tests": 2,
@@ -33,30 +26,30 @@ module.exports = {
       2,
       {
         argsIgnorePattern: "^_",
-        varsIgnorePattern: "^_"
-      }
+        varsIgnorePattern: "^_",
+      },
     ],
     "no-cond-assign": [2, "except-parens"],
     "no-unused-expressions": [
       0,
       {
-        allowTernary: true
-      }
+        allowTernary: true,
+      },
     ],
     "prefer-arrow-callback": [
       "error",
       {
-        allowNamedFunctions: true
-      }
+        allowNamedFunctions: true,
+      },
     ],
     "no-param-reassign": [
       "error",
       {
         props: true,
         // Allow overwriting properties on 'memo' which is the name we tend to use in `.reduce(...)` calls
-        ignorePropertyModificationsFor: ["memo"]
-      }
+        ignorePropertyModificationsFor: ["memo"],
+      },
     ],
-    camelcase: 0
-  }
+    camelcase: 0,
+  },
 };

@@ -11,7 +11,7 @@ exports.sourceNodes = async (
     fieldName = "postgres",
     refetchInterval,
     ...options
-  }
+  },
 ) => {
   const { connectionString, schema: postgresSchema, ...rest } = options;
 
