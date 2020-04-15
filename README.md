@@ -12,25 +12,28 @@
   gatsby-source-pg
 </h1>
 
-This module helps you pull your PostgreSQL database into Gatsby with minimal effort.
+This module helps you pull your PostgreSQL database into Gatsby with minimal
+effort.
 
 <!-- SPONSORS_BEGIN -->
 
 ## Crowd-funded open-source software
 
-To help us develop this software sustainably under the MIT license, we ask
-all individuals and businesses that use it to help support its ongoing
-maintenance and development via sponsorship.
+To help us develop this software sustainably under the MIT license, we ask all
+individuals and businesses that use it to help support its ongoing maintenance
+and development via sponsorship.
 
 ### [Click here to find out more about sponsors and sponsorship.](https://www.graphile.org/sponsor/)
 
 And please give some love to our featured sponsors 🤩:
 
 <table><tr>
-<td align="center"><a href="http://chads.website/"><img src="https://www.graphile.org/images/sponsors/chadf.png" width="90" height="90" alt="Chad Furman" /><br />Chad Furman</a></td>
-<td align="center"><a href="https://storyscript.io/?utm_source=postgraphile"><img src="https://www.graphile.org/images/sponsors/storyscript.png" width="90" height="90" alt="Storyscript" /><br />Storyscript</a></td>
-<td align="center"><a href="http://p72.vc/"><img src="https://www.graphile.org/images/sponsors/p72.png" width="90" height="90" alt="Point72 Ventures" /><br />Point72 Ventures</a></td>
+<td align="center"><a href="http://chads.website"><img src="https://graphile.org/images/sponsors/chadf.png" width="90" height="90" alt="Chad Furman" /><br />Chad Furman</a> *</td>
+<td align="center"><a href="https://storyscript.io/?utm_source=postgraphile"><img src="https://graphile.org/images/sponsors/storyscript.png" width="90" height="90" alt="Storyscript" /><br />Storyscript</a> *</td>
+<td align="center"><a href="https://postlight.com/?utm_source=graphile"><img src="https://graphile.org/images/sponsors/postlight.png" width="90" height="90" alt="Postlight" /><br />Postlight</a> *</td>
 </tr></table>
+
+<em>\* Sponsors the entire Graphile suite</em>
 
 <!-- SPONSORS_END -->
 
@@ -102,12 +105,16 @@ to merge the PostGraphile GraphQL schema into Gatsby's.
 This plugin is powered by PostGraphile, which is built on the highly flexible
 and customisable Graphile Engine.
 
-You can add to `options` most of the [PostGraphile schema-only options](https://www.graphile.org/postgraphile/usage-schema/#api-createpostgraphileschemapgconfig-schemaname-options)
+You can add to `options` most of the
+[PostGraphile schema-only options](https://www.graphile.org/postgraphile/usage-schema/#api-createpostgraphileschemapgconfig-schemaname-options)
 
 In addition, we accept the `typeName` and `fieldName` options from
-`gatsby-source-graphql` which affect how the schema is namespaced, and the `refetchInterval` setting to trigger refetching data every X seconds.
+`gatsby-source-graphql` which affect how the schema is namespaced, and the
+`refetchInterval` setting to trigger refetching data every X seconds.
 
-A common thing you might want to do is to shorten the names that PostGraphile uses by default, you can do this using a plugin such as `@graphile-contrib/pg-simplify-inflector`:
+A common thing you might want to do is to shorten the names that PostGraphile
+uses by default, you can do this using a plugin such as
+`@graphile-contrib/pg-simplify-inflector`:
 
 ```js
 // gatsby-config.js
@@ -132,7 +139,8 @@ module.exports = {
 
 ## Getting help
 
-Pop into the Graphile Discord: [http://discord.gg/graphile](http://discord.gg/graphile)
+Pop into the Graphile Discord:
+[http://discord.gg/graphile](http://discord.gg/graphile)
 
 ## Helpful links
 
