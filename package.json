@@ -46,8 +46,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^17.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-graphql": "benjie/eslint-plugin-graphql#ignore-fragments-built",
     "eslint-plugin-import": "^2.14.0",
@@ -55,8 +55,8 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
-    "eslint_d": "^7.1.1",
-    "prettier": "^1.14.3"
+    "eslint_d": "^9.1.1",
+    "prettier": "^2.0.5"
   },
   "files": [
     "/lib",
