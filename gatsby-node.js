@@ -16,6 +16,7 @@ exports.sourceNodes = async (
   const { connectionString, schema: postgresSchema, ...rest } = options;
 
   const pool = new Pool({
+    connectionTimeoutMillis: 30 * 1000,
     connectionString,
   });
   const graphqlSchema = await createSchema(pool, postgresSchema, rest);
