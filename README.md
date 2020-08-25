@@ -4,7 +4,7 @@
   </a>
   <img alt="Graphile Heart" src="https://www.graphile.org/images/graphile.optimized.svg" width="60" />
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
 
