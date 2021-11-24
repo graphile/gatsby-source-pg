@@ -37,9 +37,9 @@
   "homepage": "https://github.com/graphile/gatsby-source-pg#readme",
   "dependencies": {
     "apollo-link": "^1.2.3",
-    "gatsby-source-graphql": "^2.0.5",
-    "pg": ">=7.6.0 <9",
-    "postgraphile": "^4.4.0"
+    "gatsby-source-graphql": "^4.2.0",
+    "pg": "^8.7.1",
+    "postgraphile": "^4.12.5"
   },
   "peerDependencies": {
     "graphql": "^0.13.x | ^14.0.0"
