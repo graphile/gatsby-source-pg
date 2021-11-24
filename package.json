@@ -42,7 +42,8 @@
     "postgraphile": "^4.12.5"
   },
   "peerDependencies": {
-    "graphql": "^0.13.x | ^14.0.0"
+    "graphql": "^0.13.x | ^14.0.0 | ^15.0.0",
+    "gatsby": "^4.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -58,9 +59,5 @@
     "eslint_d": "^9.1.1",
     "prettier": "^2.0.5"
   },
-  "files": [
-    "/lib",
-    "/index.js",
-    "/gatsby-node.js"
-  ]
+  "files": ["/lib", "/index.js", "/gatsby-node.js"]
 }
