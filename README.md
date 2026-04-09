@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://www.graphile.org/postgraphile/">
+  <a href="https://postgraphile.org/postgraphile/5/">
     <img alt="PostGraphile" src="https://www.graphile.org/images/postgraphile.optimized.svg" width="60" />
   </a>
   <img alt="Graphile Heart" src="https://www.graphile.org/images/graphile.optimized.svg" width="60" />
-  <a href="https://www.gatsbyjs.org">
+  <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
@@ -98,13 +98,13 @@ This plugin uses
 [`gatsby-source-graphql`](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-graphql#readme)
 to merge the PostGraphile GraphQL schema into Gatsby's.
 
-## Customising
+## Customizing
 
 This plugin is powered by PostGraphile, which is built on the highly flexible
-and customisable Graphile Engine.
+and customizable Graphile Engine.
 
 You can add to `options` most of the
-[PostGraphile schema-only options](https://www.graphile.org/postgraphile/usage-schema/#api-createpostgraphileschemapgconfig-schemaname-options)
+[PostGraphile V4-compatibility options](https://postgraphile.org/postgraphile/5/migrating-from-v4)
 
 In addition, we accept the `typeName` and `fieldName` options from
 `gatsby-source-graphql` which affect how the schema is namespaced, and the
@@ -112,7 +112,7 @@ In addition, we accept the `typeName` and `fieldName` options from
 
 A common thing you might want to do is to shorten the names that PostGraphile
 uses by default, you can do this using a plugin such as
-`@graphile-contrib/pg-simplify-inflector`:
+`@graphile/simplify-inflection`:
 
 ```js
 // gatsby-config.js
@@ -127,7 +127,7 @@ module.exports = {
         schema: "public",
 
         /* 👇 */
-        appendPlugins: [require("@graphile-contrib/pg-simplify-inflector")],
+        appendPlugins: [require("@graphile/simplify-inflection")],
         /* 👆 */
       },
     },
@@ -142,6 +142,6 @@ Pop into the Graphile Discord:
 
 ## Helpful links
 
-- [Gatsby documentation](https://www.gatsbyjs.org/)
+- [Gatsby documentation](https://www.gatsbyjs.com/docs/)
 - [gatsby-source-pg-example](https://github.com/graphile/gatsby-source-pg-example/)
-- [PostGraphile documentation](https://www.graphile.org/postgraphile/)
+- [PostGraphile documentation](https://postgraphile.org/postgraphile/5/)

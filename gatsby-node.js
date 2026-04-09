@@ -19,15 +19,20 @@ exports.createSchemaCustomization = async (props, options) => {
     connectionString,
   });
 
-  const graphqlSchema = await createSchema(pool, postgresSchema, rest);
+  const schemaResult = await createSchema(pool, postgresSchema, rest);
 
   return gatsbySourceGraphQLNode.createSchemaCustomization(props, {
     ...rest,
     typeName,
     fieldName,
     refetchInterval,
-    createLink: () => new PostGraphileLink({ pool, schema: graphqlSchema }),
-    createSchema: () => graphqlSchema,
+    createLink: () =>
+      new PostGraphileLink({
+        pool,
+        schema: schemaResult.schema,
+        resolvedPreset: schemaResult.resolvedPreset,
+      }),
+    createSchema: () => schemaResult.gatsbySchema,
   });
 };
 

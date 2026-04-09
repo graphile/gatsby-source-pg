@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint:fix": "yarn prettier --write && yarn eslint --fix",
-    "prettier": "prettier --ignore-path .eslintignore '**/*.{js,jsx,ts,tsx,graphql,md,yaml,yml}'",
+    "prettier": "prettier --ignore-path .prettierignore '**/*.{js,jsx,ts,tsx,graphql,md,yaml,yml}'",
     "eslint": "eslint --ext js,jsx,ts,tsx .",
     "test": "jest"
   },
@@ -36,28 +36,31 @@
   },
   "homepage": "https://github.com/graphile/gatsby-source-pg#readme",
   "dependencies": {
-    "apollo-link": "^1.2.3",
-    "gatsby-source-graphql": "^4.2.0",
-    "pg": "^8.7.1",
-    "postgraphile": "^4.12.5"
+    "@apollo/client": "^4.1.7",
+    "gatsby-source-graphql": "^5.16.0",
+    "pg": "^8.20.0",
+    "postgraphile": "^5.0.0"
   },
   "peerDependencies": {
-    "graphql": "^0.13.x | ^14.0.0 | ^15.0.0",
-    "gatsby": "^4.0.0"
+    "gatsby": "^5.0.0",
+    "graphql": "^14.0.0 || ^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^7.4.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-graphql": "benjie/eslint-plugin-graphql#ignore-fragments-built",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^23.8.2",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.11.1",
-    "eslint_d": "^9.1.1",
-    "prettier": "^2.0.5"
+    "@eslint/js": "^10.0.1",
+    "@graphql-eslint/eslint-plugin": "^4.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^10.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jest": "^29.15.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint_d": "^15.0.2",
+    "globals": "^17.4.0",
+    "jest": "^30.3.0",
+    "prettier": "^3.8.1"
   },
   "files": [
     "/lib",
